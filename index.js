@@ -18,7 +18,7 @@ module.exports = (req, res, next) => {
      * The method of promise render wrapper
      *
      * @method promiseRender
-     * @param {Object} view Used view engine
+     * @param {Object} view A view or path to the view template
      * @param {Object|Function} options Render options
      * @return {Promise}
      */

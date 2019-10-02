@@ -4,7 +4,7 @@
   "description": "A simple wrapper for express render metod, which allows you to receive the rendering result through promise",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/xiondlph/express-promise-render-ts/issues"
   },
-  "homepage": "https://github.com/xiondlph/express-promise-render-ts#readme"
+  "homepage": "https://github.com/xiondlph/express-promise-render-ts#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.1",
+    "sinon": "^7.5.0"
+  }
 }
