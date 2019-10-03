@@ -1,6 +1,6 @@
 {
   "name": "express-promise-render-ts",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A simple wrapper for express render metod, which allows you to receive the rendering result through promise",
   "main": "index.js",
   "scripts": {
