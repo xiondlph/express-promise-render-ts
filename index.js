@@ -4,6 +4,7 @@
  * MIT Licensed
  */
 
+'use strict';
 
 /**
  * The middleware of promise render wrapper
