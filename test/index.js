@@ -68,6 +68,6 @@ describe("Promise render middleware", () => {
         return res.promiseRender(
             "path/to/template",
             {someParam: "someValue"}
-        ).should.eventually.rejectedWith(Error);
+        ).should.eventually.rejectedWith(renrerException);
     });
 });
