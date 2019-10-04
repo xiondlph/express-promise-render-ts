@@ -17,14 +17,15 @@ module.exports = (req, res, next) => {
 
     /**
      * The method of promise render wrapper
+     * that is attached to a response object
      *
      * @method promiseRender
-     * @param {Object} view A view or path to the view template
-     * @param {Object|Function} options Render options
+     * @param {Object} view A string that is the file path of the view file to render
+     * @param {Object} locals An object whose properties define local variables for the view
      * @return {Promise}
      */
-    res.promiseRender = (view, options) => new Promise((resolve, reject) => {
-        res.render(view, options, (err, html) => {
+    res.promiseRender = (view, locals) => new Promise((resolve, reject) => {
+        res.render(view, locals, (err, html) => {
             if (err) {
                 reject(err);
             }
