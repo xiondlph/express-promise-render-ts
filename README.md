@@ -3,7 +3,7 @@
 # express-promise-render-ts
 >A simple wrapper for express render method which allows you to receive the rendering result through promise.
 
-This is a middleware that attaches to a response object a method, that wraps a standard `render` method and returns the result of calling the `render` method through promises, without sending it to the client.
+This is a typescript support express middleware that attach to a response object a method, that wraps the result of calling a standard `render` method and returns it through promises, without sending it to the client.
 
 ## Install
 
@@ -38,4 +38,4 @@ app.get('/', (req: Request, res: Response) => {
 })
 ```
 
-This solution will be useful if you don't want to immediately send the rendered HTML string to client, but just get it for later use. For example, as a template for sending a mail message.
+This solution will be useful if you don't want to immediately send the rendered HTML string to client, but just get it for later use. For example, as a template for sending an email.
